@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 /**
  * Test class for the three parameter constructor of the Transaction class.
+ * 
  * @author Demetrius McCants
  * @version 1.0
  */
