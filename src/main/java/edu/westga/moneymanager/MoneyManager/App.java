@@ -33,7 +33,7 @@ public class App extends Application {
 	 * @postcondition the stage has been started.
 	 */
 	public void start(Stage primaryStage) throws Exception {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("view/LogWindow.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("view/LoginWindow.fxml"));
 		Parent root = loader.load();
 		Scene scene = new Scene(root);
 		primaryStage.setScene(scene);
