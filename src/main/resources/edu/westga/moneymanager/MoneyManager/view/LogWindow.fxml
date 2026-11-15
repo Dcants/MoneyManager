@@ -5,15 +5,22 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="376.0" prefWidth="418.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.westga.moneymanager.MoneyManager.view.LogWindow">
    <children>
-      <ListView fx:id="logListView" layoutX="40.0" layoutY="15.2" prefHeight="246.0" prefWidth="337.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="15.0" />
+      <ListView fx:id="logListView" layoutX="40.0" layoutY="52.0" prefHeight="188.0" prefWidth="337.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="52.0" />
       <Button layoutX="222.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleAddExpense" text="Add Expense" />
       <Button layoutX="118.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleAddIncome" text="Add Income" />
       <Label layoutX="56.0" layoutY="276.0" text="Transaction Amount:" />
       <Label layoutX="40.0" layoutY="300.0" text="Transaction Description:" />
       <TextField fx:id="amountInput" layoutX="176.0" layoutY="272.0" />
       <TextField fx:id="descriptionInput" layoutX="176.0" layoutY="296.0" />
+      <Label layoutX="145.0" layoutY="14.0" text="Transaction Log">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="0.8" layoutY="246.0" prefHeight="18.0" prefWidth="418.0" textFill="RED" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" />
    </children>
 </AnchorPane>

@@ -37,7 +37,7 @@ public class App extends Application {
 		Parent root = loader.load();
 		Scene scene = new Scene(root);
 		primaryStage.setScene(scene);
-		primaryStage.setTitle("Transaction Log");
+		primaryStage.setTitle("Money Manager");
 		primaryStage.show();
 
 	}

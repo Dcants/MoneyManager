@@ -3,6 +3,7 @@ package edu.westga.moneymanager.MoneyManager.view;
 import edu.westga.moneymanager.MoneyManager.model.Transaction;
 import edu.westga.moneymanager.MoneyManager.viewmodel.LogWindowViewModel;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.event.ActionEvent;
@@ -23,6 +24,8 @@ public class LogWindow {
 	private TextField amountInput;
 	@FXML
 	private TextField descriptionInput;
+	@FXML
+	private Label errorLabel;
 
 	/**
 	 * Instantiates the fields.
@@ -48,16 +51,19 @@ public class LogWindow {
 		try {
 			double amount = Double.parseDouble(this.amountInput.getText());
 			String description = this.descriptionInput.getText();
-			Transaction newIncome = new Transaction(amount, LocalDateTime.now(), description, "Income");
+			LocalDateTime time = LocalDateTime.now();
 
+			Transaction newIncome = new Transaction(amount, time, description, "Income");
 			this.logViewModel.addTransaction(newIncome);
 
 			this.amountInput.clear();
 			this.descriptionInput.clear();
-		} catch (NumberFormatException theException) {
-			System.err.println("Amount must be a valid number.");
-		} catch (IllegalArgumentException theException) {
-			System.err.println(theException.getMessage());
+			this.errorLabel.setText("");
+
+		} catch (NumberFormatException error) {
+			this.errorLabel.setText("Amount must be a valid number!");
+		} catch (IllegalArgumentException error) {
+			this.errorLabel.setText(error.getMessage());
 		}
 	}
 
@@ -73,16 +79,19 @@ public class LogWindow {
 		try {
 			double amount = Double.parseDouble(this.amountInput.getText());
 			String description = this.descriptionInput.getText();
-			Transaction newExpense = new Transaction(amount, LocalDateTime.now(), description, "Expense");
+			LocalDateTime time = LocalDateTime.now();
 
+			Transaction newExpense = new Transaction(amount, time, description, "Expense");
 			this.logViewModel.addTransaction(newExpense);
 
 			this.amountInput.clear();
 			this.descriptionInput.clear();
-		} catch (NumberFormatException theException) {
-			System.err.println("Amount must be a valid number.");
-		} catch (IllegalArgumentException theException) {
-			System.err.println(theException.getMessage());
+			this.errorLabel.setText("");
+
+		} catch (NumberFormatException error) {
+			this.errorLabel.setText("Amount must be a valid number!");
+		} catch (IllegalArgumentException error) {
+			this.errorLabel.setText(error.getMessage());
 		}
 	}
 
