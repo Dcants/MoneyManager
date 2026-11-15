@@ -6,4 +6,4 @@ Run as a Java Application and when prompted select Main.java (Not App.java), the
 Use the following credentials to log into the application[cite: 1]:
 * **Username:** admin
 * **Password:** password123
-* **Role:** System Administrator[cite: 1]
+* **Role:** System Administrator
