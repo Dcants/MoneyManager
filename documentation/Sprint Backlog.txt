@@ -4,3 +4,4 @@
 4. Add categories for transactions.
 5. Add an option to add a recurring transaction.
 6. Change the ListView on the "Transaction Log" window to a table.
+7. Add a "Back" button for each page, that takes the user back to the previous page.
