@@ -1,0 +1,6 @@
+1. Add a landing page with dedicated buttons for each feature, that takes you to that features page.
+2. Add a "Add Transaction" button to landing page, that takes you to the "Add Transaction" window.
+3. Add a "View Log" button to the landing page, that takes you to the "Transaction Log" window. 
+4. Add categories for transactions.
+5. Add an option to add a recurring transaction.
+6. Change the ListView on the "Transaction Log" window to a table.
