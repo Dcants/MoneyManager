@@ -1,3 +1,6 @@
+SPRINT BACKLOG
+
+Tasks for modification/improvement [
 1. Add a landing page with dedicated buttons for each feature, that takes you to that features page.
 2. Add a "Add Transaction" button to landing page, that takes you to the "Add Transaction" window.
 3. Add a "View Log" button to the landing page, that takes you to the "Transaction Log" window. 
@@ -5,3 +8,6 @@
 5. Add an option to add a recurring transaction.
 6. Change the ListView on the "Transaction Log" window to a table.
 7. Add a "Back" button for each page, that takes the user back to the previous page.
+]
+
+Tasks for View Breakdown [
