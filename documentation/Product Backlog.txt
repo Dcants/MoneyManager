@@ -2,4 +2,3 @@
 - Add Expense
 - View Log
 - View Breakdown
-- View Category
