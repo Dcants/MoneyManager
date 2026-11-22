@@ -1,0 +1,27 @@
+Add transaction
+
+Context: User is signed in, and navigated to the "add transaction" page
+1. User enters a positive number for the amount
+2. User enters a item
+3. User chooses a type
+4. User chooses a category
+5. User enters submit
+6. System informs the user their transaction has been successfully added.
+Alternative:
+A1. User enters a negative number for the amount
+A2. User enters a item
+A4. User chooses a category
+A5. User enters submit
+A6. System gracefully informs the user to enter a positive number
+Alternative 2:
+B3. User does not choose a type
+B4. User chooses a category
+B5. User enters submit
+B6. System informs the user that their transaction was not added
+Alternative 3:
+C1. User enters submit
+C2. System informs the user their transaction was not added.
+Alternative 4.:
+D4. User does not choose a category
+D5. User enters submit
+D6. System informs the user their transaction was not added. 

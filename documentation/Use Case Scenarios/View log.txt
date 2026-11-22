@@ -1,0 +1,9 @@
+View log
+Context: User is on the landing page:
+Primary:
+1. User adds transactions.
+2. User clicks on view log. 
+3. Table with a list of transactions is generated
+Alternative:
+A1. User clicks on view log without adding transactions.
+A2. A empty list of transactions is shown. 

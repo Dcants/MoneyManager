@@ -1,0 +1,19 @@
+Sign In
+
+Context: User is not currently signed into the system
+Primary:
+1. User is prompted to enter a username and password
+2. User enters their username
+3. User enters their password
+4. User clicks on submit
+5. System ensures the password matches with the user
+6. User is brought to the landing page
+Alternative
+A3. User clicks on submit before entering a password
+A4. System checks if the user matches
+A5. System gracefully informs the user their credentials are invalid.
+Alternative 2
+B3. User enters invalid password
+B4. System checks if the user matches
+B5. System gracefully informs the user their credentials are invalid.
+

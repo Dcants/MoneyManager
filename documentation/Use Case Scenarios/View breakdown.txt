@@ -1,0 +1,21 @@
+View breakdown
+Context: User is logged in and on the landing page.
+Primary: 
+1. User adds transactions then clicks on view breakdown:
+2. The system informs the user to select a time frame.
+3. User selects yearly.
+4. The system informs the user to select a type(income/expense)
+5. User selects expense.
+6. The system generates a pie chart breaking down yearly expenses by category.
+Alternative:
+A1. User does not add transactions.
+A2. User clicks on view breakdown.
+A3. System prevents this and gracefully informs the user to add transactions first.
+Alternative 2:
+B3. User selects monthly.
+B4. The system informs the user to select a type(income/expense)
+B5. User selects expense.
+B6. The system generates a pie chart breaking down monthly expenses by category.
+Alternative 3:
+C5. User selects income.
+C6. The system generates a pie chart breaking down yearly income by category. 

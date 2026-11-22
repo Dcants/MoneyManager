@@ -1,0 +1,15 @@
+Navigate Landing Page
+
+Context: User is signed in and on the landing page
+Primary: 
+1. User clicks on Add transaction
+2. User is brought to the Add Transaction page.
+Alternative:
+A1. User clicks on View log
+A2. User is brought to the log page
+Alternative 2:
+B2. User clicks on view breakdown
+B3. User is brough to the view breakdown page
+Alternative 3.
+C1. User chooses to sign out
+C2. User is brough to the sign in screen. 
